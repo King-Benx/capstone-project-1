@@ -1,0 +1,178 @@
+:root {
+  --clr-primary: #272a31;
+  --clr-secondary: #d3d3d3;
+  --clr-accent: #ec5242;
+  --clr-white: #fff;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  margin: 0;
+  background: var(--clr-secondary);
+}
+
+.img-sm {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+header {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 4vh;
+}
+
+.top-bar {
+  display: none;
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  display: none;
+}
+
+nav ul,
+.top-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-block: 0.4em;
+  margin-left: 1em;
+}
+
+nav li:last-child {
+  width: max-content;
+  border: 1px solid var(--clr-accent);
+  padding: 0.5rem;
+}
+
+nav li:last-child > a {
+  color: var(--clr-accent);
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--clr-primary);
+}
+
+nav a:hover {
+  color: var(--clr-accent);
+}
+
+.top-bar a {
+  text-decoration: none;
+  color: var(--clr-secondary);
+}
+
+.top-bar ul {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+  padding-inline-end: 1rem;
+}
+
+.nav-toggle:checked ~ nav {
+  display: block;
+}
+
+.logo,
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: var(--clr-primary);
+  height: 2px;
+  width: 1.5em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+@media (min-width: 768px) {
+  .top-bar,
+  nav,
+  .logo {
+    display: block;
+  }
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .top-bar{
+    padding-inline-end: 10%;
+  }
+
+  .main-bar {
+    background: var(--clr-white);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-inline: 1%;
+    gap: 2rem;
+  }
+
+  nav {
+    position: relative;
+    width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav a {
+    text-transform: capitalize;
+  }
+}
