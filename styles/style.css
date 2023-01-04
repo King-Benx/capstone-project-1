@@ -3,6 +3,7 @@
   --clr-secondary: #d3d3d3;
   --clr-accent: #ec5242;
   --clr-white: #fff;
+  --clr-dark-red:#651309;
 }
 
 *,
@@ -92,8 +93,20 @@ nav a:hover {
   padding-inline-end: 1rem;
 }
 
+.nav-toggle:checked {
+  background:var(--clr-white);
+}
+
 .nav-toggle:checked ~ nav {
   display: block;
+  border-radius: 0.3rem;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label{
+  background-color: var(--clr-white);
+  padding: 0.2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .logo,
@@ -135,6 +148,55 @@ nav a:hover {
 
 .nav-toggle-label span::before {
   bottom: 7px;
+}
+
+#landing-section{
+  height: 100vh;
+  background-image: url("../images/background.jpg");
+}
+
+.mask{
+  height: 100%;
+  background: rgba(255,255,255,0.6);
+  background-size: cover;
+}
+
+.mask .content{
+  padding: 4rem 1rem;
+  color: var(--clr-accent);
+  font-size: 1.2rem;
+}
+
+.mask .content h1{
+  font-size: 2rem;
+  background: linear-gradient(45deg, var(--clr-accent), var(--clr-dark-red), transparent, var(--clr-dark-red), var(--clr-accent));
+  background-color: transparent;
+  text-transform: uppercase;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.mask .content h1 ~ p {
+  color: var(--clr-primary);
+  font-size: 0.9rem;
+  background: var(--clr-secondary);
+  border: 2px solid var(--clr-white);
+  padding: 1rem;
+}
+
+.mask .content h2{
+  color: var(--clr-primary);
+  font-size: 1.4rem;
+}
+
+.mask .content h2 ~ p {
+  border:none;
+  background:none;
+  padding:0;
 }
 
 @media (min-width: 768px) {
