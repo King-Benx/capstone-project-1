@@ -3,7 +3,7 @@
   --clr-secondary: #d3d3d3;
   --clr-accent: #ec5242;
   --clr-white: #fff;
-  --clr-dark-red:#651309;
+  --clr-dark-red: #651309;
   --clr-mid-primary: #53555a;
 }
 
@@ -23,8 +23,6 @@ body {
   width: 2.5rem;
   border-radius: 50%;
 }
-
-
 
 header {
   text-align: center;
@@ -97,7 +95,7 @@ nav a:hover {
 }
 
 .nav-toggle:checked {
-  background:var(--clr-white);
+  background: var(--clr-white);
 }
 
 .nav-toggle:checked ~ nav {
@@ -105,7 +103,7 @@ nav a:hover {
   border-radius: 0.3rem;
 }
 
-.nav-toggle:checked ~ .nav-toggle-label{
+.nav-toggle:checked ~ .nav-toggle-label {
   background-color: var(--clr-white);
   padding: 0.2rem;
   border-top-left-radius: 1rem;
@@ -153,26 +151,33 @@ nav a:hover {
   bottom: 7px;
 }
 
-#landing-section{
+#landing-section {
   height: 50vh;
   background-image: url("../images/background.jpg");
 }
 
-.mask{
+.mask {
   height: 100%;
-  background: rgba(255,255,255,0.6);
+  background: rgba(255, 255, 255, 0.6);
   background-size: cover;
 }
 
-.mask .content{
+.mask .content {
   padding: 4rem 1rem;
   color: var(--clr-accent);
   font-size: 1.2rem;
 }
 
-.mask .content h1{
+.mask .content h1 {
   font-size: 2rem;
-  background: linear-gradient(45deg, var(--clr-accent), var(--clr-dark-red), transparent, var(--clr-dark-red), var(--clr-accent));
+  background: linear-gradient(
+    45deg,
+    var(--clr-accent),
+    var(--clr-dark-red),
+    transparent,
+    var(--clr-dark-red),
+    var(--clr-accent)
+  );
   background-color: transparent;
   text-transform: uppercase;
   background-size: 100%;
@@ -191,81 +196,83 @@ nav a:hover {
   padding: 1rem;
 }
 
-.mask .content h2{
+.mask .content h2 {
   color: var(--clr-primary);
   font-size: 1.4rem;
 }
 
 .mask .content h2 ~ p {
-  border:none;
-  background:none;
-  padding:0;
+  border: none;
+  background: none;
+  padding: 0;
 }
 
-#program-section{
+#program-section {
   padding: 2rem 1rem;
   background: var(--clr-primary);
-  color:var(--clr-white);
+  color: var(--clr-white);
 }
 
-#program-section h2{
+#program-section h2,
+#featured-section h2 {
   text-align: center;
-  font-size:1.4rem;
+  font-size: 1.4rem;
   margin-block-end: 0;
 }
 
-#program-section hr{
+#program-section hr,
+#featured-section hr {
   background-color: var(--clr-accent);
   width: 10%;
-  height:3px;
+  height: 3px;
   border: none;
   border-radius: 2rem;
   margin-block-end: 2rem;
 }
 
-#program-section .content{
+#program-section .content {
   display: flex;
   flex-direction: column;
-  gap:1rem;
-  justify-content:center;
-  align-items:center;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
-#program-section .card{
+#program-section .card {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--clr-mid-primary);
-  gap:1rem;
-  padding:1rem;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-#program-section .card .card-image{
-  width:10%;
+#program-section .card .card-image {
+  width: 10%;
 }
 
-#program-section .card .card-title{
-  width:30%;
+#program-section .card .card-title {
+  width: 30%;
 }
-#program-section .card .card-content{
-  flex:4;
+#program-section .card .card-content {
+  flex: 4;
 }
 
-#program-section .card .card-title h4{
-  color:var(--clr-accent);
+#program-section .card .card-title h4 {
+  color: var(--clr-accent);
   font-size: 1rem;
 }
 
 #program-section .card .card-content p {
-  font-size:0.8rem;
+  font-size: 0.8rem;
 }
 
-#program-section a{
-  margin-block:2rem;
-  margin-inline:auto;
-  display:inline-block;
-  color:var(--clr-white);
-  text-decoration:none;
+#program-section a {
+  margin-block: 2rem;
+  margin-inline: auto;
+  display: inline-block;
+  color: var(--clr-white);
+  text-decoration: none;
   padding: 1rem;
   background-color: var(--clr-accent);
 }
@@ -275,7 +282,107 @@ nav a:hover {
 }
 
 #program-section .call-to-action {
-  text-align:center;
+  text-align: center;
+}
+
+#featured-section {
+  padding: 2rem 1rem;
+  background-color: var(--clr-white);
+}
+
+#featured-section .card {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.4rem;
+  align-items: center;
+}
+
+#featured-section .card .card-image {
+  background-image: url("../images/transparent.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100px;
+  height: 150px;
+  position: relative;
+}
+
+#featured-section .card .card-image img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  right: -10px;
+}
+
+#featured-section .card .card-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#featured-section .card .card-content h4 {
+  font-size: 1rem;
+  padding: 0;
+  margin-block: 0.5rem;
+}
+
+#featured-section .card .card-content p,
+#featured-section .card .card-content em {
+  font-size: 0.8rem;
+  display: block;
+  overflow: auto;
+}
+
+#featured-section .card .card-content em {
+  color: var(--clr-accent);
+}
+
+#featured-section .card .card-content p::before {
+  display: block;
+  content: "";
+  background-color: var(--clr-secondary);
+  width: 10%;
+  height: 2px;
+  padding-block-start: 0;
+  margin-bottom: 0.5rem;
+}
+
+
+
+#featured-section .call-to-action{
+  text-align: center;
+}
+
+#featured-section .call-to-action button{
+  text-transform: uppercase;
+  margin-block: 2rem;
+  display: inline-block;
+  color: var(--clr-primary);
+  padding: 1rem 7rem;
+  background-color: var(--clr-white);
+  border:1px solid var(--clr-secondary);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#featured-section .call-to-action button:hover {
+  color:var(--clr-white);
+  background-color:var(--clr-dark-red);
+}
+
+#featured-section .call-to-action span{
+  font-size: 1.4rem;
+  color: var(--clr-accent);
+  font-weight: bold;
+}
+
+#featured-section .call-to-action button:hover > span{
+  color: var(--clr-white);
 }
 
 @media (min-width: 768px) {
@@ -288,7 +395,7 @@ nav a:hover {
     display: none;
   }
 
-  .top-bar{
+  .top-bar {
     padding-inline-end: 10%;
   }
 
@@ -296,7 +403,7 @@ nav a:hover {
     background: var(--clr-white);
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     padding-inline: 1%;
     gap: 2rem;
   }
