@@ -66,23 +66,41 @@ nav li:last-child {
   padding: 0.5rem;
 }
 
-nav li:last-child > a {
-  color: var(--clr-accent);
-}
-
 nav a {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--clr-primary);
 }
 
+.top-bar a {
+  text-decoration: none;
+  color: var(--clr-secondary);
+}
+
 nav a:hover {
   color: var(--clr-accent);
 }
 
-.top-bar a {
-  text-decoration: none;
-  color: var(--clr-secondary);
+nav li:last-child > a {
+  color: var(--clr-accent);
+}
+
+footer {
+  padding-block: 1.2rem;
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer div:first-child {
+  width: 30%;
+}
+
+footer img {
+  width: 100%;
+  max-width: 50px;
 }
 
 .top-bar ul {
@@ -92,22 +110,6 @@ nav a:hover {
   align-items: center;
   gap: 1em;
   padding-inline-end: 1rem;
-}
-
-.nav-toggle:checked {
-  background: var(--clr-white);
-}
-
-.nav-toggle:checked ~ nav {
-  display: block;
-  border-radius: 0.3rem;
-}
-
-.nav-toggle:checked ~ .nav-toggle-label {
-  background-color: var(--clr-white);
-  padding: 0.2rem;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
 }
 
 .logo,
@@ -124,6 +126,22 @@ nav a:hover {
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+.nav-toggle:checked {
+  background: var(--clr-white);
+}
+
+.nav-toggle:checked ~ nav {
+  display: block;
+  border-radius: 0.3rem;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label {
+  background-color: var(--clr-white);
+  padding: 0.2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .nav-toggle-label span,
@@ -157,20 +175,56 @@ nav a:hover {
   background-image: url("../images/background.jpg");
 }
 
-.mask {
-  height: 100%;
-  background: rgba(255, 255, 255, 0.6);
-  background-size: cover;
-}
-
 .mask .content {
   padding: 4rem 1rem;
   color: var(--clr-accent);
   font-size: 1.2rem;
 }
 
+#program-section .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.mask {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  background-size: cover;
+}
+
+#partners-section .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
 #about-landing-section .mask .content {
   text-align: center;
+}
+
+#program-section a {
+  margin-block: 2rem;
+  margin-inline: auto;
+  display: inline-block;
+  color: var(--clr-white);
+  text-decoration: none;
+  padding: 1rem;
+  background-color: var(--clr-accent);
+}
+
+#program-section a:hover {
+  background-color: var(--clr-dark-red);
+}
+
+#featured-section .call-to-action span {
+  font-size: 1.4rem;
+  color: var(--clr-accent);
+  font-weight: bold;
 }
 
 #about-landing-section .mask .content p ~ span,
@@ -186,14 +240,15 @@ nav a:hover {
 
 .mask .content h1 {
   font-size: 2rem;
-  background: linear-gradient(
-    45deg,
-    var(--clr-accent),
-    var(--clr-dark-red),
-    transparent,
-    var(--clr-dark-red),
-    var(--clr-accent)
-  );
+  background:
+    linear-gradient(
+      45deg,
+      var(--clr-accent),
+      var(--clr-dark-red),
+      transparent,
+      var(--clr-dark-red),
+      var(--clr-accent)
+    );
   background-color: transparent;
   text-transform: uppercase;
   background-size: 100%;
@@ -252,14 +307,6 @@ nav a:hover {
   margin-block-end: 2rem;
 }
 
-#program-section .content {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-}
-
 #program-section .card {
   display: flex;
   justify-content: center;
@@ -276,6 +323,7 @@ nav a:hover {
 #program-section .card .card-title {
   width: 30%;
 }
+
 #program-section .card .card-content {
   flex: 4;
 }
@@ -285,22 +333,22 @@ nav a:hover {
   font-size: 1rem;
 }
 
+#featured-section .call-to-action,
+#about-program-section .content p,
+#past-summits-section .content p {
+  text-align: center;
+}
+
+#featured-section .card .card-content em,
+#about-program-section .content p,
+#past-summits-section .content p,
+#featured-section .card .card-content p {
+  font-size: 0.8rem;
+  display: block;
+}
+
 #program-section .card .card-content p {
   font-size: 0.8rem;
-}
-
-#program-section a {
-  margin-block: 2rem;
-  margin-inline: auto;
-  display: inline-block;
-  color: var(--clr-white);
-  text-decoration: none;
-  padding: 1rem;
-  background-color: var(--clr-accent);
-}
-
-#program-section a:hover {
-  background-color: var(--clr-dark-red);
 }
 
 #program-section .call-to-action {
@@ -331,6 +379,12 @@ nav a:hover {
   position: relative;
 }
 
+#partners-section .content img {
+  width: 100%;
+  max-width: 60px;
+  height: 60px;
+}
+
 #featured-section .card .card-image img {
   width: 80px;
   height: 80px;
@@ -353,14 +407,6 @@ nav a:hover {
   margin-block: 0.5rem;
 }
 
-#featured-section .card .card-content p,
-#featured-section .card .card-content em,
-#about-program-section .content p,
-#past-summits-section .content p {
-  font-size: 0.8rem;
-  display: block;
-}
-
 #featured-section .card .card-content em {
   color: var(--clr-accent);
 }
@@ -373,12 +419,6 @@ nav a:hover {
   height: 2px;
   padding-block-start: 0;
   margin-bottom: 0.5rem;
-}
-
-#featured-section .call-to-action,
-#about-program-section .content p,
-#past-summits-section .content p {
-  text-align: center;
 }
 
 #featured-section .call-to-action button {
@@ -396,12 +436,6 @@ nav a:hover {
 #featured-section .call-to-action button:hover {
   color: var(--clr-white);
   background-color: var(--clr-dark-red);
-}
-
-#featured-section .call-to-action span {
-  font-size: 1.4rem;
-  color: var(--clr-accent);
-  font-weight: bold;
 }
 
 #featured-section .call-to-action button:hover > span {
@@ -466,44 +500,13 @@ nav a:hover {
   color: var(--clr-white);
 }
 
-#partners-section .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-#partners-section .content img {
-  width: 100%;
-  max-width: 60px;
-  height: 60px;
-}
-
-footer {
-  padding-block: 1.2rem;
-  display: flex;
-  font-size: 0.8rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-footer div:first-child {
-  width: 30%;
-}
-
-footer img {
-  width: 100%;
-  max-width: 50px;
-}
-
 @media (min-width: 768px) {
   .top-bar,
   nav,
   .logo {
     display: block;
   }
+
   .nav-toggle-label {
     display: none;
   }
