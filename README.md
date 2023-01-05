@@ -12,7 +12,7 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🚀 Visit Site] (#website)
+  - [🚀 Visit Site](#website)
   - [🎥 Walkthrough](#walkthrough)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
@@ -40,7 +40,7 @@ This project is the capstone project that portrays a conference website.
 
 ## 🎥 WALKTHROUGH <a name="walkthrough"></a>
 
-<a name="<https://www.loom.com/share/785d791fbd164d8b9a4ad7f206cc0393/>">Project walkthrough</a>
+<a name="<<https://www.loom.com/share/785d791fbd164d8b9a4ad7f206cc0393/>>">https://www.loom.com/share/785d791fbd164d8b9a4ad7f206cc0393/</a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
