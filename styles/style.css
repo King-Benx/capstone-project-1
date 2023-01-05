@@ -232,7 +232,8 @@ nav a:hover {
 #program-section h2,
 #featured-section h2,
 #about-program-section h2,
-#past-summits-section h2
+#past-summits-section h2,
+#partners-section h2
 {
   text-align: center;
   font-size: 1.4rem;
@@ -242,7 +243,8 @@ nav a:hover {
 #program-section hr,
 #featured-section hr,
 #about-program-section hr,
-#past-summits-section hr
+#past-summits-section hr,
+#partners-section hr
 {
   background-color: var(--clr-accent);
   width: 10%;
@@ -458,6 +460,44 @@ nav a:hover {
   align-items: center;
   color:var(--clr-white);
   cursor: pointer;
+}
+
+#partners-section{
+  background:var(--clr-mid-primary);
+  padding: 2rem 1rem;
+  color:var(--clr-white);
+}
+
+#partners-section .content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+#partners-section .content img {
+  width: 100%;
+  max-width: 60px;
+  height: 60px;
+}
+
+footer{
+  padding-block:1.2rem;
+  display: flex;
+  font-size:0.8rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer div:first-child{
+  width: 30%;
+}
+
+footer img{
+  width: 100%;
+  max-width: 50px;
 }
 
 @media (min-width: 768px) {
