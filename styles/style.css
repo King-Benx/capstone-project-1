@@ -16,7 +16,7 @@
 body {
   font-family: Lato, sans-serif;
   margin: 0;
-  background: var(--clr-secondary);
+  background: var(--clr-white);
 }
 
 .img-sm {
@@ -151,7 +151,8 @@ nav a:hover {
   bottom: 7px;
 }
 
-#landing-section {
+#landing-section,
+#about-landing-section {
   height: 50vh;
   background-image: url("../images/background.jpg");
 }
@@ -166,6 +167,21 @@ nav a:hover {
   padding: 4rem 1rem;
   color: var(--clr-accent);
   font-size: 1.2rem;
+}
+
+#about-landing-section .mask .content {
+  text-align: center;
+}
+
+#about-landing-section .mask .content p ~ span,
+#about-landing-section .mask .content span a {
+  color: var(--clr-primary);
+  display: block;
+  font-size: 0.8rem;
+}
+
+#about-landing-section .mask .content span a {
+  font-weight: bold;
 }
 
 .mask .content h1 {
@@ -214,14 +230,20 @@ nav a:hover {
 }
 
 #program-section h2,
-#featured-section h2 {
+#featured-section h2,
+#about-program-section h2,
+#past-summits-section h2
+{
   text-align: center;
   font-size: 1.4rem;
   margin-block-end: 0;
 }
 
 #program-section hr,
-#featured-section hr {
+#featured-section hr,
+#about-program-section hr,
+#past-summits-section hr
+{
   background-color: var(--clr-accent);
   width: 10%;
   height: 3px;
@@ -332,10 +354,11 @@ nav a:hover {
 }
 
 #featured-section .card .card-content p,
-#featured-section .card .card-content em {
+#featured-section .card .card-content em,
+#about-program-section .content p,
+#past-summits-section .content p {
   font-size: 0.8rem;
   display: block;
-  overflow: auto;
 }
 
 #featured-section .card .card-content em {
@@ -352,37 +375,89 @@ nav a:hover {
   margin-bottom: 0.5rem;
 }
 
-
-
-#featured-section .call-to-action{
+#featured-section .call-to-action,
+#about-program-section .content p, #past-summits-section .content p {
   text-align: center;
 }
 
-#featured-section .call-to-action button{
+#featured-section .call-to-action button {
   text-transform: uppercase;
   margin-block: 2rem;
   display: inline-block;
   color: var(--clr-primary);
   padding: 1rem 7rem;
   background-color: var(--clr-white);
-  border:1px solid var(--clr-secondary);
+  border: 1px solid var(--clr-secondary);
   font-size: 1rem;
   cursor: pointer;
 }
 
 #featured-section .call-to-action button:hover {
-  color:var(--clr-white);
-  background-color:var(--clr-dark-red);
+  color: var(--clr-white);
+  background-color: var(--clr-dark-red);
 }
 
-#featured-section .call-to-action span{
+#featured-section .call-to-action span {
   font-size: 1.4rem;
   color: var(--clr-accent);
   font-weight: bold;
 }
 
-#featured-section .call-to-action button:hover > span{
+#featured-section .call-to-action button:hover > span {
   color: var(--clr-white);
+}
+
+#about-program-section, #past-summits-section {
+  background-color: var(--clr-white);
+  padding-inline:1rem;
+}
+
+
+#about-program-section .content .img-responsive,
+#past-summits-section .content .timeline
+{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  gap:1rem;
+  text-align:center;
+}
+
+#about-program-section .content .img-responsive img{
+  width: 50%;
+  border:1px solid var(--clr-secondary);
+}
+
+#past-summits-section{
+  border-top: 1px solid var(--clr-secondary);
+  margin-block:4rem;
+}
+
+#past-summits-section .content .timeline .card .card-content {
+  position: relative;
+  max-height:190px;
+}
+
+#past-summits-section .content .timeline .card .card-content img{
+ width: 100%;
+ max-width: 288px;
+ height:190px;
+}
+
+#past-summits-section .content .timeline .card .card-content .card-text {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  height:100%;
+  width: 100%;
+  background-color: rgba(255,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:var(--clr-white);
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
