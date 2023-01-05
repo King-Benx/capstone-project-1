@@ -380,7 +380,7 @@ footer img {
   display: flex;
   justify-content: space-between;
   gap: 1.4rem;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #featured-section .card .card-image {
@@ -571,9 +571,14 @@ footer img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
     padding-inline: 10%;
+  }
+
+  #featured-section .content .card {
+    width: 30vw;
   }
 
   #landing-section,
