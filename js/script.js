@@ -61,6 +61,7 @@ function createCard(id, name, position, description, image) {
   cardImage.className = 'card-image';
   const imageProfile = document.createElement('img');
   imageProfile.setAttribute('src', image);
+  imageProfile.setAttribute('alt', name);
   cardImage.append(imageProfile);
   card.append(cardImage);
   const cardBody = document.createElement('div');
@@ -75,7 +76,9 @@ function createCard(id, name, position, description, image) {
   cardDescription.innerText = description;
   cardBody.append(cardDescription);
   card.append(cardBody);
-  speakerSection.append(card);
+  if (speakerSection) {
+    speakerSection.append(card);
+  }
 }
 
 function generateSpeakers(speakers) {
@@ -93,17 +96,19 @@ if (window.innerWidth < 768) {
   generateSpeakers(6);
 }
 
-button.addEventListener('click', () => {
-  if (numberOfSpeakers < 6) {
-    let child = speakerSection.lastElementChild;
-    while (child) {
-      speakerSection.removeChild(child);
-      child = speakerSection.lastElementChild;
+if (button) {
+  button.addEventListener('click', () => {
+    if (numberOfSpeakers < 6) {
+      let child = speakerSection.lastElementChild;
+      while (child) {
+        speakerSection.removeChild(child);
+        child = speakerSection.lastElementChild;
+      }
+      generateSpeakers(6);
+      button.remove();
     }
-    generateSpeakers(6);
-    button.remove();
-  }
-  if (numberOfSpeakers === 6) {
-    button.remove();
-  }
-});
+    if (numberOfSpeakers === 6) {
+      button.remove();
+    }
+  });
+}

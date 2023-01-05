@@ -26,7 +26,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [My Portfolio] <a name="about-project"></a>
+# 📖 [Capstone Project 1] <a name="about-project"></a>
 
 This project is the capstone project that portrays a conference website.
 
@@ -34,7 +34,7 @@ This project is the capstone project that portrays a conference website.
 
 ## 🚀 VIEW ONLINE
 
-<a name="<<https://king-benx.github.io/capstone-project/>>">https://king-benx.github.io/capstone-project/</a>
+<a name="<<https://king-benx.github.io/capstone-project-1/>>">https://king-benx.github.io/capstone-project-1/</a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -73,7 +73,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-```git clone git@github.com:King-Benx/capstone_project.git```
+```git clone git@github.com:King-Benx/capstone-project-1.git```
 
 ### Usage
 
