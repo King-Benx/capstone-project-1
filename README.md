@@ -12,6 +12,8 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [🚀 Visit Site] (#website)
+  - [🎥 Walkthrough](#walkthrough)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -32,18 +34,24 @@ This project is the capstone project that portrays a conference website.
 
 **[Capstone Project]** is a simple project demonstrating responsive conference website.
 
-## 🚀 VIEW ONLINE
+## 🚀 VISIT SITE <a name="website"></a>
 
-<a name="<<https://king-benx.github.io/capstone-project-1/>>">https://king-benx.github.io/capstone-project-1/</a>
+<a name="<https://king-benx.github.io/my-portfolio/>">https://king-benx.github.io/my-portfolio/</a>
+
+## 🎥 WALKTHROUGH <a name="walkthrough"></a>
+
+<a name="<https://www.loom.com/share/785d791fbd164d8b9a4ad7f206cc0393/>">Project walkthrough</a>
 
 ## 🛠 Built With <a name="built-with"></a>
+
+HTML, CSS AND JAVASCRIPT  
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">HTML, CSS & JS</a></li>
+    <li>HTML, CSS & JS</li>
   </ul>
 </details>
 
