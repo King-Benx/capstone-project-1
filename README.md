@@ -88,8 +88,8 @@ Clone this repository to your desired folder:
 To run the project, execute the following command:
 
 ```
-1. Right click file and run in browser.
-2. Open file in vscode right click and open in live server
+1. Right click index.html file and run in browser.
+2. Open index file in vscode right click and open in live server
 ```
 
 ## 👥 Author <a name="authors"></a>
