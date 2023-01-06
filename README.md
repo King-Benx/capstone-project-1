@@ -36,7 +36,7 @@ This project is the capstone project that portrays a conference to be held for s
 
 ## 🚀 VISIT SITE <a name="website"></a>
 
-<a name="https://king-benx.github.io/capstone-project-1/">Senior Coders Conference</a>
+<a name="<https://king-benx.github.io/capstone-project-1/>">https://king-benx.github.io/capstone-project-1/</a>
 
 ## 🎥 WALKTHROUGH <a name="walkthrough"></a>
 
