@@ -28,19 +28,19 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Capstone Project 1] <a name="about-project"></a>
+# 📖 [Senior Coders Conference 2023] <a name="about-project"></a>
 
-This project is the capstone project that portrays a conference website.
+This project is the capstone project that portrays a conference to be held for senior coders website.
 
-**[Capstone Project]** is a simple project demonstrating responsive conference website.
+**[Senior Coders Conference 2023]** is a capstone project demonstrating the responsive home and about page for a conference to be held by senior coders.
 
 ## 🚀 VISIT SITE <a name="website"></a>
 
-<a name="<https://king-benx.github.io/my-portfolio/>">https://king-benx.github.io/my-portfolio/</a>
+<a name="https://king-benx.github.io/capstone-project-1/">Senior Coders Conference</a>
 
 ## 🎥 WALKTHROUGH <a name="walkthrough"></a>
 
-<a name="<<https://www.loom.com/share/785d791fbd164d8b9a4ad7f206cc0393/>>">https://www.loom.com/share/785d791fbd164d8b9a4ad7f206cc0393/</a>
+<a name="<<https://www.loom.com/share/5c930ac162f145c892ef4ec9b832f33e>>">https://www.loom.com/share/5c930ac162f145c892ef4ec9b832f33e</a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
